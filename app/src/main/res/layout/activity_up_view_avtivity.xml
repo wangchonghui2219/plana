@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.UpVipAvtivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/shape_wear_bg"
+            android:layout_height="wrap_content">
+            <com.dlwx.baselib.view.CircleImageView
+                android:layout_width="50dp"
+                android:id="@+id/iv_head"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_nickName"
+                style="@style/text_content_black"
+                android:layout_gravity="center_horizontal"
+                />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent" android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="#FE7B8C"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_vip1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/icon_huiyuanv" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_vip2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/icon_huiyuanv" />
+
+                    </LinearLayout>
+
+                     <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                         android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_vip3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_huiyuanv"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                 <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_vip4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_huiyuanv"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/tv_vip1"
+                    style="@style/text_content_white"
+                    android:layout_weight="1"
+                    android:text="普通会员"
+                    android:layout_gravity="center_horizontal"
+                     />
+
+                 <TextView
+                    android:id="@+id/tv_vip2"
+                    style="@style/text_content_white"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:text="普通会员"
+                    android:layout_gravity="center_horizontal"
+                     />
+
+                 <TextView
+                    android:id="@+id/tv_vip3"
+                    style="@style/text_content_white"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:text="普通会员"
+                    android:layout_gravity="center_horizontal"
+                     />
+
+                 <TextView
+                    android:id="@+id/tv_vip4"
+                    style="@style/text_content_white"
+                    android:textColor="@color/white"
+                    android:text="普通会员"
+                    android:layout_gravity="center_horizontal"
+                     />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_vipvv1"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_huiyuanjiantou"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:id="@+id/iv_vipvv2"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_vertical"
+                         android:src="@mipmap/icon_huiyuanjiantou"
+                         android:visibility="invisible" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_vipvv3"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_huiyuanjiantou"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/iv_vipvv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_huiyuanjiantou"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    <TextView
+       style="@style/text_small_title"
+        android:layout_margin="10dp"
+        android:id="@+id/tv_name"
+        />
+
+    <GridView
+        android:id="@+id/gv_list"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:numColumns="3"></GridView>
+
+    <View
+            style="@style/haveing"
+            />
+
+    <Button
+        android:text="下一步"
+            android:id="@+id/btn_nextvip"
+            android:layout_width="match_parent"
+            android:background="@color/theme"
+            android:textColor="@color/white"
+            android:layout_height="40dp" />
+</LinearLayout>

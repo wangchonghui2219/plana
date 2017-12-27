@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.MyGeneraActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <com.dlwx.baselib.view.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/iv_head"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    style="@style/text_content_black" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    style="@style/text_content_black" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_mess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <ImageView
+                style="@style/image_pic_size"
+                android:src="@mipmap/icon_tuiguangren"
+                />
+            <TextView
+               style="@style/text_content_black"
+                android:text="邀请人信息"
+                android:layout_weight="1"
+                />
+            <ImageView
+                style="@style/right_jiantou"
+                />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+</LinearLayout>

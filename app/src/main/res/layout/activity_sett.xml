@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.SettActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+    <LinearLayout
+        android:id="@+id/ll_changepwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <ImageView
+            style="@style/image_pic_size"
+            android:src="@mipmap/icon_xiugaimima"
+            />
+        <TextView
+            style="@style/text_content_black"
+            android:text="修改登录密码"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <ImageView
+            style="@style/image_pic_size"
+            android:src="@mipmap/icon_sztuichu"
+            />
+        <TextView
+            style="@style/text_content_black"
+            android:text="注销登陆"
+             />
+    </LinearLayout>
+
+</LinearLayout>

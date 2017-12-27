@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.HelpDescActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+        <TextView
+            android:layout_gravity="center_horizontal"
+           style="@style/text_small_title"
+            android:padding="10dp"
+            android:id="@+id/tv_title"
+            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:visibility="gone"
+                    style="@style/text_content_black"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/text_content_black"
+             />
+</LinearLayout>

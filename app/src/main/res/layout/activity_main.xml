@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.base.MainActivity">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/theme"
+        />
+    <LinearLayout
+        android:id="@+id/ll_seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/theme"
+        >
+
+        <ImageView
+
+            style="@style/home_logo_pic_size"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_seach"
+            style="@style/home_seach"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_home_seach"
+            android:hint="输入关键词找有券商品"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="30dp"
+
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></android.support.v4.view.ViewPager>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/selete_button_color"
+        app:itemTextColor="@color/selete_button_color"
+        app:menu="@menu/bottom_navigation_menu"></android.support.design.widget.BottomNavigationView>
+
+</LinearLayout>

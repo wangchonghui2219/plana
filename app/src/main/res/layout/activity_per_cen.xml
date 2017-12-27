@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.PerCenActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/ll_head"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/text_content_black"
+            android:text="头像"
+            android:layout_weight="1"
+            />
+        <com.dlwx.baselib.view.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/haveing"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/ll_nick"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/text_content_black"
+            android:text="昵称"
+            android:layout_weight="1"
+            />
+        <TextView
+            style="@style/text_content_black"
+            android:id="@+id/tv_nick"
+          />
+            <ImageView
+                style="@style/right_jiantou"
+                />
+    </LinearLayout>
+
+    <View
+        style="@style/haveing"
+        />
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/ll_account"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/text_content_black"
+            android:text="账户"
+            android:layout_weight="1"
+            />
+        <TextView
+            style="@style/text_content_black"
+            android:id="@+id/tv_account"
+          />
+
+    </LinearLayout>
+
+    <View
+        style="@style/haveing"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/ll_phone"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/text_content_black"
+            android:text="手机号"
+            android:layout_weight="1"
+            />
+        <TextView
+            style="@style/text_content_black"
+            android:id="@+id/tv_phone"
+            />
+        <ImageView
+            style="@style/right_jiantou"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/haveing"
+        />
+</LinearLayout>

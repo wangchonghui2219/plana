@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.WithdrawPwdActivity">
+
+    <include
+        layout="@layout/tool_bar"
+        />
+    <com.dlwx.plana.views.PswInputView
+       android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/et_pwd"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/text_content_black"
+        android:text="忘记提现密码"
+        android:id="@+id/tv_forget"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+        <Button
+            android:id="@+id/btn_submit"
+           style="@style/Buton_style"
+            android:text="确定"
+            android:layout_marginTop="20dp"
+            />
+
+</LinearLayout>

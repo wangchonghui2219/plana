@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.SeleteAccountActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_account"
+           style="@style/text_content_black"
+            android:layout_weight="1"
+            />
+        <ImageView
+            style="@style/image_pic_size"
+            android:src="@mipmap/icon_zhifuxuan"
+            />
+    </LinearLayout>
+    <View
+        style="@style/haveing"
+        />
+
+        <TextView
+            android:id="@+id/tv_change"
+            style="@style/text_content_gary"
+            android:text="修改支付宝帐号"
+            android:layout_gravity="center_horizontal"
+            />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_marginTop="10dp"
+            style="@style/Buton_style"
+            android:text="提交"
+            />
+</LinearLayout>

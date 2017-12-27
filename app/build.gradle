@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'A计划'
+            keyPassword '123456'
+            storeFile file('E:/dlwx/keystore/palana.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.dlwx.plana"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 14
+        versionName "1.1.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/"
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':baselib')
+    compile files('libs/open_sdk_r5781.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //fastjson
+    compile 'com.alibaba:fastjson:1.2.9'
+    //支付
+        compile 'com.alibaba.alipay:alipaySingle:20160825@jar'
+    //登陆
+    compile 'com.ali.auth.sdk:alibabauth_core:1.4.3@jar'
+    compile 'com.ali.auth.sdk:alibabauth_ui:1.4.3@aar'
+    compile 'com.ali.auth.sdk:alibabauth_ext:1.4.3@jar'
+    //安全基础
+    compile 'com.taobao.android:securityguardaar3:5.1.81@aar'
+    //Mtop网关
+    compile 'com.taobao.android:mtopsdk_allinone_open:1.2.2.4@jar'
+    //applink
+    compile 'com.alibaba.sdk.android:alibc_link_partner:1.1.0.0'
+    //UT
+        compile 'com.taobao.android:utdid4all:1.1.5.3_proguard@jar'
+        compile 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
+    //联盟SDK
+    compile 'com.alimama.tunion.sdk:tuniontradesdk:0.3.2'
+    //电商SDK
+    compile 'com.alibaba.sdk.android:alibc_trade_common:3.1.1.206'
+    compile 'com.alibaba.sdk.android:alibc_trade_biz:3.1.1.206'
+    compile 'com.alibaba.sdk.android:alibc_trade_sdk:3.1.1.206'
+}

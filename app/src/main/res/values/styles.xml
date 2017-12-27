@@ -1,0 +1,157 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+        <style name="home_logo_pic_size">
+            <item name="android:layout_width">@dimen/home_logo_pic</item>
+            <item name="android:layout_height">@dimen/home_logo_pic</item>
+        </style>
+        <style name="home_seach">
+            <item name="android:padding">5dp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">13sp</item>
+        </style>
+    <!--标题头-->
+    <style name="Title_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_black</item>
+
+    </style>
+    <!--分隔线-->
+    <style name="haveing">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/havling</item>
+    </style>
+    <style name="my_head_size">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+    <!--黑色字体-->
+    <style name="text_content_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+    <!--黑色字体-->
+    <style name="text_content_black_two">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+    <!--灰色字体-->
+    <style name="text_content_gary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+     <!--灰色字体-->
+    <style name="text_content_gary_">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!--白色字体-->
+     <style name="text_content_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--小标题-->
+    <style name="text_small_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <!--右侧箭头-->
+    <style name="right_jiantou">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:src">@mipmap/icon_jiantouhuise</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="image_pic_size">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+    <style name="image_pic_size_big">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+
+    <style name="Buton_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_btn_bg</item>
+    </style>
+    <style name="Auth_code">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_auth_code</item>
+    </style>
+
+    <style name="item_pic_size">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+     <style name="item_pic_size_">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+ <style name="item_pic_size_share">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+
+
+    <!--扇形图-->
+    <declare-styleable name="PieChartView">
+        <attr name="gravity">
+            <enum name="top" value="0"></enum>
+            <enum name="centre" value="1"></enum>
+            <enum name="fixXY" value="2"></enum>
+        </attr>
+        <!--扇形的中心空白直径 单位:db-->
+        <attr name="centreRadius" format="dimension"></attr>
+        <!--字体大小-->
+        <attr name="lableTextSize" format="dimension"></attr>
+        <!--第一个扇形的偏移值(突出效果)-->
+        <attr name="firstOffset" format="dimension"></attr>
+    </declare-styleable>
+</resources>

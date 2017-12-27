@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.SeachCenterActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+        <LinearLayout
+            android:id="@+id/ll_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="默认"
+                android:id="@+id/tv_default"
+                android:padding="10dp"
+                android:background="@drawable/selete_sort_bg"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/havling"
+                />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="销量优先"
+                android:background="@drawable/selete_sort_bg"
+                android:id="@+id/tv_sales"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/havling"
+                />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selete_sort_bg"
+                android:text="价格排序"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_height="40dp" />
+        </LinearLayout>
+    <View
+        style="@style/haveing"
+        />
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/refreshLayout"
+            app:srlEnablePreviewInEditMode="true"
+            android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_list"
+            ></android.support.v7.widget.RecyclerView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

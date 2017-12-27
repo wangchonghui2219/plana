@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.TotalMoneyActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/theme"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                >
+                <TextView
+                    style="@style/text_content_white"
+                    android:text="总资产"
+                    android:layout_gravity="center_horizontal"
+                     />
+                     <TextView
+                         android:id="@+id/tv_money"
+                         android:layout_gravity="center_horizontal"
+                         style="@style/text_content_white"
+                         android:textSize="18sp"
+                     />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                   style="@style/text_content_black"
+                    android:text="推广佣金"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_commission"
+                   style="@style/text_content_black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="0.5dp"
+                android:background="@color/havling"
+                />
+        <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                   style="@style/text_content_black"
+                    android:text="上月预估金额"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_upmonth"
+                   style="@style/text_content_black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="0.5dp"
+                android:background="@color/havling"
+                />
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                   style="@style/text_content_black"
+                    android:text="本月预估金额"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_nextmonth"
+                   style="@style/text_content_black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    <View
+        style="@style/haveing"
+        />
+</LinearLayout>

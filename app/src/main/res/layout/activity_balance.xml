@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.dlwx.plana.activity.BalanceActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/theme"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+            <TextView
+                style="@style/text_content_white"
+                android:text="可用余额"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_gravity="center_horizontal"
+                style="@style/text_content_white"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:layout_gravity="center_horizontal"
+               style="@style/text_content_black"
+                android:text="推广佣金"
+
+                android:layout_marginLeft="0dp"
+                />
+            <TextView
+                android:id="@+id/tv_gener"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+               style="@style/text_content_black"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_tixian"
+                style="@style/text_content_white"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_auth_code"
+                android:padding="8dp"
+                android:text="佣金提现" />
+        </LinearLayout>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="0.5dp"
+            android:background="@color/havling"
+            />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_gravity="center_horizontal"
+                style="@style/text_content_black"
+                android:text="预估收入"
+                android:layout_marginLeft="0dp"
+                />
+            <TextView
+                android:id="@+id/tv_forecast"
+                android:layout_gravity="center_horizontal"
+                style="@style/text_content_black"
+                android:textSize="15sp"
+                android:layout_marginLeft="0dp"
+                />
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_gravity="center_horizontal"
+                style="@style/text_content_white"
+                android:layout_width="70dp"
+                android:text="结算"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:background="@drawable/shape_auth_code"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/haveing"
+        />
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.plana.activity.GetPhoneCodeActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            style="@style/image_pic_size"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_zcyanzheng" />
+
+        <EditText
+            android:id="@+id/et_auth"
+            style="@style/text_content_black"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spacebetween"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@null"
+            android:hint="请输入手机号验证码" />
+
+        <Button
+            android:id="@+id/btn_auth"
+            style="@style/Auth_code"
+            android:text="验证码"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Buton_style"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="下一步"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>
